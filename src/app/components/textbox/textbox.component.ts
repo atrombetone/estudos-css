@@ -16,6 +16,9 @@ export class TextboxComponent implements OnInit {
   @Input()
   value: string;
 
+  @Input()
+  required: boolean = false;
+
   @Output() valueChange = new EventEmitter<string>();
 
   constructor() { }

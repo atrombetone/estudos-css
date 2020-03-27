@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/services/login.service';
+import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'page-login',
@@ -9,15 +12,20 @@ export class LoginComponent implements OnInit {
 
   login: string = '';
   senha: string = '';
+  subscription: Subscription;
 
-  constructor() { }
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
   }
 
   doLogin() {
-    console.log(this.login);
-    console.log(this.senha);
+    this.subscription = this.loginService.doLogin(this.login, this.senha)
+      .subscribe(data => {
+        console.log(data);
+        location.href = 'http://localhost:4200/';
+        //this.router.navigate(['/home']);
+      });
   }
 
   doRemember() {

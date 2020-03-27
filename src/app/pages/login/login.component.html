@@ -8,11 +8,13 @@
       <div class="login-form">
         <ui-textbox 
           label="Login"
-          [(value)]="login"></ui-textbox>
+          [(value)]="login"
+          [required]="true"></ui-textbox>
         <ui-textbox 
           type="password"
           label="Senha"
-          [(value)]="senha"></ui-textbox>
+          [(value)]="senha"
+          [required]="true"></ui-textbox>
       </div>
       <div class="login-buttons"> 
         <button class="btn btn-remember" (click)="doRemember()">Esqueci senha</button>

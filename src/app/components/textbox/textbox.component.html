@@ -1,6 +1,8 @@
 <div class="c-ui-textbox">
   <input [type]="type" placeholder=" " 
     [(ngModel)]="value"
-    (ngModelChange)="valueChangeExec()"/>
+    (ngModelChange)="valueChangeExec()"
+    [attr.required]="required ? '' : null"
+  />
   <label>{{label}}</label>
 </div>
