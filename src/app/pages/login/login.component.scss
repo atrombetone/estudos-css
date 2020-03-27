@@ -1,0 +1,38 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #443D3D;
+    @media screen and (max-width: 600px){
+        grid-template-columns: 0% 100%;
+    }
+}
+
+.bg {
+    background-image: url(../../../assets/login_bg.jpg);
+    background-size: cover;
+}
+
+.logo-container {   
+    padding-top: 20px;
+    text-align: center;
+}
+
+.logo-container img {   
+    border-radius: 50%;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.btn-login {
+    background-color: #027CEB;
+    border: none;
+    padding: 18px;
+    width: 120px;
+    border-radius: 26px;
+    color: #fff;
+    font-size: medium;
+}

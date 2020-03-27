@@ -1,0 +1,53 @@
+.c-ui-textbox {
+  position: relative;
+  padding-top: 13px;
+  margin-bottom: 10px;
+}
+
+.c-ui-textbox input{
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius: 0;
+}
+
+.c-ui-textbox input:focus{
+  border-bottom: 2px solid #3951b2;
+}
+
+.c-ui-textbox input::placeholder{
+  color:transparent;
+}
+
+.c-ui-textbox label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.c-ui-textbox input:required:invalid + label{
+  color: red;
+}
+.c-ui-textbox input:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.c-ui-textbox input:required:invalid + label:before{
+  content: '*';
+}
+.c-ui-textbox input:focus + label,
+.c-ui-textbox input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #3951b2;
+}
