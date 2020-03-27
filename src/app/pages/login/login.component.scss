@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -36,24 +38,13 @@
     width: 250px;
 }
 
-.btn {
-    border: none;
-    padding: 18px;
-    width: 160px;
-    border-radius: 26px;
-    color: #fff;
-    font-size: medium;
-    margin: 9px;
-    outline: none;
-}
-
 .btn-login {
-    background-color: #027CEB;
+    background-color: $primary-color;
 }
 
 .btn-remember {
-    background-color: #ccc;
-    color: #443D3D;
+    background-color: $un-important-color;
+    color: $dark-font-color;
 }
 
 .login-buttons {

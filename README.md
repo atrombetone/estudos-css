@@ -27,6 +27,9 @@ Automagicamente a aplicação será transpilada e o webserver interno do node so
     <td>
       <img src="https://github.com/atrombetone/estudos-css/blob/master/screenshots/login.png" width="600" />
     </td>
+    <td>
+      <img src="https://github.com/atrombetone/estudos-css/blob/master/screenshots/layout_home.png" width="600" />
+    </td>
   </tr>
 </table>
 

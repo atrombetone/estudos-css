@@ -8,6 +8,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './layouts/main/main.component';
 import { TextboxComponent } from './components/textbox/textbox.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './pages/home/home.component';
     LoginComponent,
     MainComponent,
     TextboxComponent,
-    HomeComponent
+    HomeComponent,
+    AvatarComponent,
+    DashboardComponent
     
   ],
   imports: [

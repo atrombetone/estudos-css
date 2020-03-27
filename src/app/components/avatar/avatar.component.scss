@@ -1,0 +1,21 @@
+@import '../../../assets/styles/variables.scss';
+
+.c-avatar {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid thin #797979;
+    color: #fff;
+    line-height: 25px;
+}
+
+.c-avatar img {
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+.c-avatar button  {
+    padding: 5px;
+    background-color: #000;
+    border: solid thin #ccc;
+}
