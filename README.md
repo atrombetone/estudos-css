@@ -1,27 +1,34 @@
 # Layout
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Este projeto foi gerado [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
-## Development server
+## Montando o Ambiente
+### Clonando o Repositório
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Em uma pasta de sua preferência digite o comando a seguir para fazer o Clone do projeto:
 
-## Code scaffolding
+...$> git clone https://github.com/atrombetone/estudos-css.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Instalando as dependências
+Execute o comando __cd estudos-css__ e dê enter para entrar no diretório do projeto.
+O Comando __npm install__ fará a instalação das dependências da aplicação.
 
-## Build
+## Buildando e executando 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Concluído o comando acima vamos buildar e levantar a aplicação, para isso digite o comando
+__ng serve --open__
+Automagicamente a aplicação será transpilada e o webserver interno do node sobre a aplicação, imediatamente a seguir o navegador será aberto na URL "http://localhost:4200"
 
-## Running unit tests
+## Resultado da aplicação no ar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Screenshots 
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/atrombetone/estudos-css/blob/master/screenshots/login.png" width="600" />
+    </td>
+  </tr>
+</table>
 
-## Running end-to-end tests
+Para efetuar o login digite qualquer informação no login e senha, por enquanto não há nenhuma validação
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
