@@ -1,4 +1,6 @@
 <div class="c-ui-textbox">
-  <input [type]="type" placeholder=" "/>
+  <input [type]="type" placeholder=" " 
+    [(ngModel)]="value"
+    (ngModelChange)="valueChangeExec()"/>
   <label>{{label}}</label>
 </div>

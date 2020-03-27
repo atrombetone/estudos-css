@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #443D3D;
+    line-height: 50px;
     @media screen and (max-width: 600px){
         grid-template-columns: 0% 100%;
     }
@@ -15,7 +16,7 @@
 }
 
 .logo-container {   
-    padding-top: 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -24,15 +25,37 @@
 }
 
 .login-form {
-    padding: 20px;
+    text-align: center;
+    padding: 0px 100px;
+    @media screen and (max-width: 900px){
+        padding: 40px;
+    }
+}
+
+.login-form ui-textbox {
+    width: 250px;
+}
+
+.btn {
+    border: none;
+    padding: 18px;
+    width: 160px;
+    border-radius: 26px;
+    color: #fff;
+    font-size: medium;
+    margin: 9px;
 }
 
 .btn-login {
     background-color: #027CEB;
-    border: none;
-    padding: 18px;
-    width: 120px;
-    border-radius: 26px;
-    color: #fff;
-    font-size: medium;
+}
+
+.btn-remember {
+    background-color: #ccc;
+    color: #443D3D;
+}
+
+.login-buttons {
+    padding-top: 10px;
+    text-align: center;
 }

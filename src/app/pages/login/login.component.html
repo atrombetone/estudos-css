@@ -6,13 +6,18 @@
         <img class="logotipo" src="../../../assets/logo_login.jpeg" alt="Logotipo" />
       </div>
       <div class="login-form">
-        <ui-textbox label="Login" class=""></ui-textbox>
+        <ui-textbox 
+          label="Login"
+          [(value)]="login"></ui-textbox>
         <ui-textbox 
           type="password"
-          label="Senha"></ui-textbox>
-        <button class="btn-login">Entrar</button>
+          label="Senha"
+          [(value)]="senha"></ui-textbox>
       </div>
-      <a href="#">Esqueci minha senha</a>
+      <div class="login-buttons"> 
+        <button class="btn btn-remember" (click)="doRemember()">Esqueci senha</button>
+        <button class="btn btn-login" (click)="doLogin()">Entrar</button>
+      </div>
     </div>
   </div>
 </div>
