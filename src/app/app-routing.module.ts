@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { SprintsComponent } from './pages/sprints/sprints.component';
+import { ResourcesComponent } from './pages/resources/resources.component';
 
 const routes: Routes = [
-  { path: '**', component: DashboardComponent}
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'sprints', component: SprintsComponent },
+  { path: 'resources', component: ResourcesComponent },
+  { path: '**', component: DashboardComponent }
 ];
 
 @NgModule({

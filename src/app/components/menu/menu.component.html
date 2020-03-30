@@ -1,0 +1,5 @@
+<div class="side-menu">
+  <a href="#" *ngFor="let item of menus" [routerLink]="[ item.path ]" routerLinkActive="router-link-active"  >
+    <span class="material-icons">{{item.icon}}</span> {{item.label}}
+  </a>
+</div>

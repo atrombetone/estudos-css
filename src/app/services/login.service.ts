@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
 import { User } from '../models/user';
+import { MenuItem } from '../models/menu-item';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +30,7 @@ export class LoginService {
     localStorage.setItem(this.USER_KEY, JSON.stringify(user));
   }
 
-  public getUser() {
+  public getUser(): User {
     const user = localStorage.getItem(this.USER_KEY);
     if(user && user != '')
       return JSON.parse(user);
@@ -38,5 +39,16 @@ export class LoginService {
 
   public logoff() {
     localStorage.removeItem(this.USER_KEY);
+  }
+
+  public getMenus(): Observable<Array<MenuItem>> {
+    let menus = [
+      {id: 1, path: 'dashboard', label: 'Dashboard', icon: 'dashboard'},
+      {id: 2, path: 'projects', label: 'Projects', icon: 'account_balance_wallet'},
+      {id: 3, path: 'sprints', label: 'Sprints', icon: 'reorder'},
+      {id: 4, path: 'resources', label: 'Resources', icon: 'group'}
+    ];
+
+    return of(menus);
   }
 }

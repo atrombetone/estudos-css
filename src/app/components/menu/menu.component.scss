@@ -1,0 +1,27 @@
+@import '../../../assets/styles/variables.scss';
+
+.side-menu {
+    width: 100%; 
+    
+    a {
+      background-color:  #0D0D0D; 
+      color: #fff;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      line-height: 30px;
+      border-bottom: solid thin #555454;
+      span {
+        position: relative; 
+        top: 6px;
+      }
+    }
+
+    a:hover {
+      background-color: #555454;
+    }
+
+    .router-link-active {
+      background-color: $primary-color;
+    }
+}
