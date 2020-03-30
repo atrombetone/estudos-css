@@ -3,13 +3,13 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px auto auto;
     grid-auto-rows: auto;
 
     grid-template-areas:
         "aside header header header"
         "aside  main   main   main"
-        "footer footer footer footer" 
-    ;
+        "footer footer footer footer";
 
     @media (max-width: 600px) {
         grid-template-areas:
@@ -20,10 +20,15 @@
     }
 }
 
-header, footer {
+header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: $primary-color;
 
+    div {
+        padding: 8px 16px;
+    }
 }
 
 main {
@@ -35,7 +40,8 @@ aside {
     grid-area: aside;
 }
 
-footer {
+footer { 
+    grid-area: footer;
     padding: 18px;
     text-align: center;
     grid-area: footer;
@@ -43,6 +49,20 @@ footer {
     color: #fff;
 }
 
-#teste:nth-child(1) {
-    background-color: yellow;
+h3 {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 4px;
+    span {
+        position: relative;
+        top: 5px;
+    }
+}
+
+.c-infos {
+
+}
+
+.c-actions {
+    text-align: right;
 }
