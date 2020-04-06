@@ -1,6 +1,31 @@
+
+@import '../../../assets/styles/variables.scss';
+
+$border-radius-size: 5px;
+
 .c-grid-projects {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 40px auto repeat(3, 200px);
+    
+    div {
+        padding: 8px;
+        background-color: #fff;
+    }
+
+    .c-header-grid {
+        color: #fff;
+        background-color: $primary-color;
+        font-weight: bold;
+    }
+    
+    .c-header-grid--round-top-left {
+        border-top-left-radius: $border-radius-size;
+    }
+    
+    .c-header-grid--round-top-right {
+        border-top-right-radius: $border-radius-size;
+    }
 }
+
 

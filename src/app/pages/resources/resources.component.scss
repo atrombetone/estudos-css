@@ -1,0 +1,35 @@
+
+@import '../../../assets/styles/variables.scss';
+
+$border-radius-size: 5px;
+
+.c-resouce-container {
+    padding: 10px;
+}
+
+.c-table {
+    display: grid;
+    grid-template-columns: 
+        minmax(100px, 200px) 
+        minmax(200px, auto)
+        minmax(100px, 200px) 80px;
+
+    .c-cell-header {
+        background-color: $primary-color;
+        color: #fff;
+        padding: 5px;
+    }
+
+    .c-cell-header:nth-child(1) {
+        border-top-left-radius: $border-radius-size;
+    }
+
+    .c-cell-header:nth-child(4) {
+        border-top-right-radius: $border-radius-size;
+    }
+
+    .c-cell {
+        padding: 5px;
+    }
+}
+

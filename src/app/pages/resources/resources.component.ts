@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ResourceService } from 'src/app/services/resource.service';
+import { Resource } from 'src/app/models/resource';
 
 @Component({
   selector: 'app-resources',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResourcesComponent implements OnInit {
 
-  constructor() { }
+  resources: Resource[];
+  columns = ['Login', 'Name', 'Paper'];
+
+  constructor(private resourceService: ResourceService) { }
 
   ngOnInit() {
+    this.resourceService.getResources().subscribe(data => {
+      this.resources = data;
+    });
+    console.log(this.columns);
   }
 
 }

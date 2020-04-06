@@ -1,3 +1,16 @@
-<p>
-  resources works!
-</p>
+<div class="c-resouce-container">
+  <div class="c-table ">
+    <div *ngFor="let cellHeader of columns" class="c-cell-header">
+      {{cellHeader}}
+    </div>
+    <div class="c-cell-header">Excluir</div>
+  </div>  
+  <div class="c-table c-content" *ngFor="let item of resources">
+    <div class="c-cell">{{item.login}}</div>
+    <div class="c-cell">{{item.name}}</div>
+    <div class="c-cell">{{item.paper}}</div>
+    <div class="c-cell">
+      <span class="material-icons">trash</span>
+    </div>
+  </div>
+</div>

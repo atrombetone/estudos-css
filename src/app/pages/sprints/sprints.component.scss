@@ -1,0 +1,19 @@
+.c-sprint-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    grid-gap: 5px;
+
+    div {
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .c-header-title {
+        font-weight: bold;
+        text-align: center;
+        padding: 5px 0px;
+        font-size: 18px;
+    }
+}

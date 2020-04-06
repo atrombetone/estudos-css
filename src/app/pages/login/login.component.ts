@@ -24,7 +24,6 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
   
-  onDes
   doLogin() {
     if(this.login == '' || this.senha == '') {
       alert('Informe seu login ou a senha para acesso ao sistema.');
